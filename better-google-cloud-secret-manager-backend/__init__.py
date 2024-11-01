@@ -45,7 +45,7 @@ class BetterGoogleCloudSecretManagerBackend(CloudSecretManagerBackend):
 
         return self._get_secret(self.variables_prefix, key)
 
-    def get_conn_uri(self, conn_id: str) -> Optional[str]:
+    def get_conn_value(self, conn_id: str) -> str | None:
         if self.connections_prefix is None:
             return None
 
