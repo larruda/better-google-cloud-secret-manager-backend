@@ -3,7 +3,7 @@ from typing import Optional
 from airflow.providers.google.cloud.secrets.secret_manager import CloudSecretManagerBackend
 
 
-class CustomCloudSecretManagerBackend(CloudSecretManagerBackend):
+class BetterGoogleCloudSecretManagerBackend(CloudSecretManagerBackend):
     """
     https://github.com/apache/airflow/issues/19251
 
